@@ -10,7 +10,6 @@ public class Main {
         users[0] = new User("login1", "pass1");
         users[1] = new User("login2", "pass2");
         users[0].setRoles("admin");
-        users[0].setName("4p0x");
         System.out.println(Arrays.asList(users));
 
 
@@ -18,11 +17,11 @@ public class Main {
             while (user == null){
                 user = MenuProgram.authorization(users);
             }
-            if(user.getRoles().equals("admin")){
+            if(user.getRoles().right.equals("admin")){
                 while (user != null){
                     users = MenuProgram.menuAdmin(users, user);
                 }
-            }else  if(user.getRoles().equals("client")){
+            }else  if(user.getRoles().right.equals("client")){
                 while (user != null){
                     users = MenuProgram.menuClient(users, user);
                 }

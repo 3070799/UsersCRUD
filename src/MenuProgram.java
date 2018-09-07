@@ -28,7 +28,7 @@ public class MenuProgram {
     }
 
     public static User [] menuAdmin(User[] users, User user){
-        LoggerUser.i(user.getName(), "Main Admin menu \n" + menuAdmin);
+        LoggerUser.d(user.getName(), "Main Admin menu \n" + menuAdmin);
         readConsoleValue();
 
         return users;
